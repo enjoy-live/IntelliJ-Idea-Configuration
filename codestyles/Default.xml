@@ -1,0 +1,9 @@
+<code_scheme name="Default" version="173">
+  <JavaCodeStyleSettings>
+    <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="100" />
+    <option name="NAMES_COUNT_TO_USE_IMPORT_ON_DEMAND" value="100" />
+    <DO_NOT_IMPORT_INNER>
+      <CLASS name="@Tag" />
+    </DO_NOT_IMPORT_INNER>
+  </JavaCodeStyleSettings>
+</code_scheme>

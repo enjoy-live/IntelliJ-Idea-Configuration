@@ -1,0 +1,22 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
+    <option name="SEARCH_SCOPE" value="All Places" />
+    <mask>*.css</mask>
+    <mask>*.xml</mask>
+    <mask>*.jsp</mask>
+    <mask>*.property</mask>
+    <mask>*.properties</mask>
+    <mask>*DepartureNotifier.java</mask>
+    <mask>*.http</mask>
+    <mask>*Controller.java</mask>
+    <mask>*.sql</mask>
+    <mask>*Phase.java</mask>
+    <mask>*.html</mask>
+    <mask>*Repository</mask>
+    <mask>*Repository.java</mask>
+    <mask>*.java</mask>
+    <mask>*.yml</mask>
+  </component>
+</application>

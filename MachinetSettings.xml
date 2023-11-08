@@ -1,0 +1,206 @@
+<application>
+  <component name="com.github.evgenys91.machinet.common.feedback.FeedbackState">
+    <option name="feedbackDTOByID">
+      <map>
+        <entry key="AccountApiTest.java_delAccountWhenAccountIdIsNotNull">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="AccountApiTest.java" />
+              <option name="myMethodName" value="delAccountWhenAccountIdIsNotNull" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should delete the account when the accountid is not null&quot;)&#10;    void delAccountWhenAccountIdIsNotNull() {&#10;        Long accountId = 1L;&#10;        DelAccountDTO delAccountDTO = new DelAccountDTO();&#10;        delAccountDTO.setAppKey(&quot;appKey&quot;);&#10;&#10;        accountApi.delAccount(accountId, delAccountDTO);&#10;&#10;        verify(accountService, times(1)).delAccount(accountId, delAccountDTO);&#10;    }" />
+              <option name="myGeneratedDate" value="1672389453057" />
+              <option name="myRequestId" value="336de1" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="AccountApiTest.java_delAccountWhenAccountIdIsNullThenThrowException">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="AccountApiTest.java" />
+              <option name="myMethodName" value="delAccountWhenAccountIdIsNullThenThrowException" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should throw an exception when the accountid is null&quot;)&#10;    void delAccountWhenAccountIdIsNullThenThrowException() {&#10;        DelAccountDTO delAccountDTO = new DelAccountDTO();&#10;        delAccountDTO.setAppKey(&quot;appKey&quot;);&#10;        assertThrows(&#10;                IllegalArgumentException.class, () -&gt; accountApi.delAccount(null, delAccountDTO));&#10;        verify(accountService, never()).delAccount(anyLong(), anyString());&#10;    }" />
+              <option name="myGeneratedDate" value="1672389453057" />
+              <option name="myRequestId" value="336de1" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="AccountBizTest.java_createDefaultCcClientAccount">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="AccountBizTest.java" />
+              <option name="myMethodName" value="createDefaultCcClientAccount" />
+              <option name="myCode" value="@Test&#10;    void createDefaultCcClientAccount() {&#10;    }" />
+              <option name="myGeneratedDate" value="1671084465513" />
+              <option name="myRequestId" value="644275" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="AccountBizTest.java_createDefaultCcmsAccount">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="AccountBizTest.java" />
+              <option name="myMethodName" value="createDefaultCcmsAccount" />
+              <option name="myCode" value="@Test&#10;    void createDefaultCcmsAccount() {&#10;    }" />
+              <option name="myGeneratedDate" value="1671084465519" />
+              <option name="myRequestId" value="644275" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="AccountBizTest.java_createDefaultClientAccount">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="AccountBizTest.java" />
+              <option name="myMethodName" value="createDefaultClientAccount" />
+              <option name="myCode" value="@Test&#10;    void createDefaultClientAccount() {&#10;    }" />
+              <option name="myGeneratedDate" value="1671084465507" />
+              <option name="myRequestId" value="644275" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="AccountBizTest.java_createDefaultClientAccountWhenOmsAdminGroupIsNullThenThrowException">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="AccountBizTest.java" />
+              <option name="myMethodName" value="createDefaultClientAccountWhenOmsAdminGroupIsNullThenThrowException" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should throw an exception when the omsadmingroup is null&quot;)&#10;    void createDefaultClientAccountWhenOmsAdminGroupIsNullThenThrowException() {&#10;        AccountCreateRequest accountDefaultDTO = new AccountCreateRequest();&#10;        accountDefaultDTO.setUsername(&quot;test&quot;);&#10;        accountDefaultDTO.setClientId(&quot;test&quot;);&#10;        accountDefaultDTO.setClientName(&quot;test&quot;);&#10;        accountDefaultDTO.setEmail(&quot;test@test.com&quot;);&#10;        accountDefaultDTO.setParentGroupCode(&quot;OMS_CLIENT&quot;);&#10;        accountDefaultDTO.setType(AccountDefaultType.CLIENT);&#10;&#10;        assertThrows(&#10;                ValidateException.class,&#10;                () -&gt; {&#10;                    accountBiz.createDefaultClientAccount(accountDefaultDTO);&#10;                });&#10;    }" />
+              <option name="myGeneratedDate" value="1671084465489" />
+              <option name="myRequestId" value="644275" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="AccountBizTest.java_createDefaultClientAccountWhenOmsAdminParentGroupIsNullThenThrowException">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="AccountBizTest.java" />
+              <option name="myMethodName" value="createDefaultClientAccountWhenOmsAdminParentGroupIsNullThenThrowException" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should throw an exception when the omsadminparentgroup is null&quot;)&#10;    void createDefaultClientAccountWhenOmsAdminParentGroupIsNullThenThrowException() {&#10;        AccountCreateRequest accountDefaultDTO = new AccountCreateRequest();&#10;        accountDefaultDTO.setUsername(&quot;test&quot;);&#10;        accountDefaultDTO.setClientId(&quot;test&quot;);&#10;        accountDefaultDTO.setClientName(&quot;test&quot;);&#10;        accountDefaultDTO.setEmail(&quot;test@test.com&quot;);&#10;        accountDefaultDTO.setParentGroupCode(&quot;OMS_CLIENT&quot;);&#10;        accountDefaultDTO.setType(AccountDefaultType.CLIENT);&#10;&#10;        assertThrows(&#10;                ValidateException.class,&#10;                () -&gt; {&#10;                    accountBiz.createDefaultClientAccount(accountDefaultDTO);&#10;                });&#10;    }" />
+              <option name="myGeneratedDate" value="1671084465501" />
+              <option name="myRequestId" value="644275" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="AccountBizTest.java_createDefaultClientAccountWhenOmsClientParentGroupIsNotExistThenThrowException">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="AccountBizTest.java" />
+              <option name="myMethodName" value="createDefaultClientAccountWhenOmsClientParentGroupIsNotExistThenThrowException" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should throw an exception when the omsclientparentgroup is not exist&quot;)&#10;    void createDefaultClientAccountWhenOmsClientParentGroupIsNotExistThenThrowException() {&#10;        AccountCreateRequest accountDefaultDTO = new AccountCreateRequest();&#10;        accountDefaultDTO.setUsername(&quot;test&quot;);&#10;        accountDefaultDTO.setClientId(&quot;test&quot;);&#10;        accountDefaultDTO.setClientName(&quot;test&quot;);&#10;        accountDefaultDTO.setEmail(&quot;test@test.com&quot;);&#10;        accountDefaultDTO.setParentGroupCode(&quot;OMS_CLIENT&quot;);&#10;        accountDefaultDTO.setType(AccountDefaultType.CLIENT);&#10;&#10;        assertThrows(&#10;                ValidateException.class,&#10;                () -&gt; {&#10;                    accountBiz.createDefaultClientAccount(accountDefaultDTO);&#10;                });&#10;    }" />
+              <option name="myGeneratedDate" value="1671084465519" />
+              <option name="myRequestId" value="644275" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="AccountBizTest.java_createDefaultClientAccountWhenOmsClientParentGroupIsNullThenThrowException">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="AccountBizTest.java" />
+              <option name="myMethodName" value="createDefaultClientAccountWhenOmsClientParentGroupIsNullThenThrowException" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should throw an exception when the omsclientparentgroup is null&quot;)&#10;    void createDefaultClientAccountWhenOmsClientParentGroupIsNullThenThrowException() {&#10;        AccountCreateRequest accountDefaultDTO = new AccountCreateRequest();&#10;        accountDefaultDTO.setUsername(&quot;test&quot;);&#10;        accountDefaultDTO.setClientId(&quot;test&quot;);&#10;        accountDefaultDTO.setClientName(&quot;test&quot;);&#10;        accountDefaultDTO.setEmail(&quot;test@test.com&quot;);&#10;        accountDefaultDTO.setParentGroupCode(&quot;OMS_CLIENT&quot;);&#10;        accountDefaultDTO.setType(AccountDefaultType.CLIENT);&#10;&#10;        assertThrows(&#10;                ValidateException.class,&#10;                () -&gt; {&#10;                    accountBiz.createDefaultClientAccount(accountDefaultDTO);&#10;                });&#10;    }" />
+              <option name="myGeneratedDate" value="1671084465495" />
+              <option name="myRequestId" value="644275" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="AccountBizTest.java_createDefaultClientAccountWhenOmsRowScopeIsNullThenThrowException">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="AccountBizTest.java" />
+              <option name="myMethodName" value="createDefaultClientAccountWhenOmsRowScopeIsNullThenThrowException" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should throw an exception when the omsrowscope is null&quot;)&#10;    void createDefaultClientAccountWhenOmsRowScopeIsNullThenThrowException() {&#10;        AccountCreateRequest accountDefaultDTO = new AccountCreateRequest();&#10;        accountDefaultDTO.setUsername(&quot;test&quot;);&#10;        accountDefaultDTO.setClientId(&quot;test&quot;);&#10;        accountDefaultDTO.setClientName(&quot;test&quot;);&#10;        accountDefaultDTO.setEmail(&quot;test@test.com&quot;);&#10;        accountDefaultDTO.setType(AccountDefaultType.CLIENT);&#10;        accountBiz.createDefaultClientAccount(accountDefaultDTO);&#10;    }" />
+              <option name="myGeneratedDate" value="1671084465483" />
+              <option name="myRequestId" value="644275" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="AccountBizTest.java_createDefaultClientAccountWhenUsernameIsNoneThenThrowException">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="AccountBizTest.java" />
+              <option name="myMethodName" value="createDefaultClientAccountWhenUsernameIsNoneThenThrowException" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should throw an exception when the username is none&quot;)&#10;    void createDefaultClientAccountWhenUsernameIsNoneThenThrowException() {&#10;        AccountCreateRequest accountDefaultDTO = new AccountCreateRequest();&#10;        accountDefaultDTO.setUsername(&quot;NONE&quot;);&#10;        accountDefaultDTO.setClientId(&quot;FTL&quot;);&#10;        accountDefaultDTO.setClientName(&quot;FTL&quot;);&#10;        accountDefaultDTO.setEmail(&quot;test@ftl.com&quot;);&#10;        accountDefaultDTO.setParentGroupCode(&quot;OMS_CLIENT&quot;);&#10;        accountDefaultDTO.setType(AccountDefaultType.CLIENT);&#10;&#10;        assertThrows(&#10;                ValidateException.class,&#10;                () -&gt; {&#10;                    accountBiz.createDefaultClientAccount(accountDefaultDTO);&#10;                });&#10;    }" />
+              <option name="myGeneratedDate" value="1671084465519" />
+              <option name="myRequestId" value="644275" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="AccountBizTest.java_createDefaultClientAccountWhenUsernameIsNotNoneAndOmsClientParentGroupIsExistThenReturnNewAccount">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="AccountBizTest.java" />
+              <option name="myMethodName" value="createDefaultClientAccountWhenUsernameIsNotNoneAndOmsClientParentGroupIsExistThenReturnNewAccount" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&#10;            &quot;Should return a new account when the username is not none and omsclientparentgroup is exist&quot;)&#10;    void&#10;            createDefaultClientAccountWhenUsernameIsNotNoneAndOmsClientParentGroupIsExistThenReturnNewAccount() {&#10;        AccountCreateRequest accountDefaultDTO = new AccountCreateRequest();&#10;        accountDefaultDTO.setUsername(&quot;test&quot;);&#10;        accountDefaultDTO.setClientId(&quot;test&quot;);&#10;        accountDefaultDTO.setClientName(&quot;test&quot;);&#10;        accountDefaultDTO.setEmail(&quot;test@test.com&quot;);&#10;        accountDefaultDTO.setParentGroupCode(&quot;OMS_CLIENT&quot;);&#10;        accountDefaultDTO.setType(AccountDefaultType.CLIENT);&#10;&#10;        Account result = accountBiz.createDefaultClientAccount(accountDefaultDTO);&#10;&#10;        assertNotNull(result);&#10;    }" />
+              <option name="myGeneratedDate" value="1671084465519" />
+              <option name="myRequestId" value="644275" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="ResourceServiceTest.java_currentMenuTreeV2_1WhenTerminalDeviceIsEmptyThenReturnMenuList">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="ResourceServiceTest.java" />
+              <option name="myMethodName" value="currentMenuTreeV2_1WhenTerminalDeviceIsEmptyThenReturnMenuList" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should return the menu list when the terminal device is empty&quot;)&#10;    void currentMenuTreeV2_1WhenTerminalDeviceIsEmptyThenReturnMenuList() {&#10;        Long appAccountId = 1L;&#10;        String app = &quot;app&quot;;&#10;        String terminalDevice = &quot;&quot;;&#10;        Resource resource = new Resource();&#10;        resource.setId(1L);&#10;        resource.setName(&quot;menu&quot;);&#10;        resource.setType(ResourceType.MENU);&#10;        ResourceVO resourceVO = new ResourceVO();&#10;        resourceVO.setId(1L);&#10;        resourceVO.setName(&quot;menu&quot;);&#10;        resourceVO.setType(ResourceType.MENU);&#10;&#10;        when(resourceRepository.findAll(&#10;                new RSQLSpecification&lt;Resource&gt;(STR_APPID, EQUAL, appAccountId)&#10;                        .and(&#10;                                &quot;type&quot;,&#10;                                IN,&#10;                                List.of(&#10;                                        ResourceType.MENU,&#10;                                        ResourceType.IFRAME,&#10;                                        ResourceType.APP))))&#10;                .thenReturn(List.of(resource));&#10;&#10;        List&lt;ResourceVO&gt; result =&#10;                resourceService.currentMenuTreeV2_1(appAccountId, app, terminalDevice);&#10;&#10;        assertThat(result).isNotNull();&#10;        assertEquals(result.get(0).getName(), &quot;menu&quot;);&#10;    }" />
+              <option name="myGeneratedDate" value="1672883302481" />
+              <option name="myRequestId" value="4abfeb" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="ResourceServiceTest.java_currentMenuTreeV2_1WhenTerminalDeviceIsNotEmptyThenReturnMenuList">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="ResourceServiceTest.java" />
+              <option name="myMethodName" value="currentMenuTreeV2_1WhenTerminalDeviceIsNotEmptyThenReturnMenuList" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should return the menu list when the terminal device is not empty&quot;)&#10;    void currentMenuTreeV2_1WhenTerminalDeviceIsNotEmptyThenReturnMenuList() {&#10;        Resource resource = new Resource();&#10;        resource.setId(1L);&#10;        resource.setName(&quot;test&quot;);&#10;        resource.setType(ResourceType.APP);&#10;        ResourceVO resourceVO = new ResourceVO();&#10;        resourceVO.setId(1L);&#10;        resourceVO.setName(&quot;test&quot;);&#10;        resourceVO.setType(ResourceType.APP);&#10;        when(resourceRepository.findAll(new RSQLSpecification&lt;&gt;(&quot;id&quot;, EQUAL, 1L)))&#10;                .thenReturn(List.of(resource));&#10;        when(resourceService.resource2Tree(List.of(resource))).thenReturn(List.of(resourceVO));&#10;&#10;        List&lt;ResourceVO&gt; result = resourceService.currentMenuTreeV2_1(1L, &quot;test&quot;, &quot;test&quot;);&#10;&#10;        assertThat(result).isNotNull();&#10;        assertEquals(result.get(0).getName(), &quot;test&quot;);&#10;    }" />
+              <option name="myGeneratedDate" value="1672883302496" />
+              <option name="myRequestId" value="4abfeb" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="ResourceServiceTest.java_currentMenuTreeV2_1WhenTerminalDeviceIsNotNullThenReturnMenuList">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="ResourceServiceTest.java" />
+              <option name="myMethodName" value="currentMenuTreeV2_1WhenTerminalDeviceIsNotNullThenReturnMenuList" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should return the menu list when the terminal device is not null&quot;)&#10;    void currentMenuTreeV2_1WhenTerminalDeviceIsNotNullThenReturnMenuList() {&#10;        Long appAccountId = 1L;&#10;        String app = &quot;app&quot;;&#10;        String terminalDevice = &quot;terminalDevice&quot;;&#10;        List&lt;ResourceVO&gt; resourceVOList = new ArrayList&lt;&gt;();&#10;        ResourceVO resourceVO = new ResourceVO();&#10;        resourceVO.setType(ResourceType.MENU);&#10;        resourceVOList.add(resourceVO);&#10;&#10;        when(resourceRepository.findAll(&#10;                        new RSQLSpecification&lt;Resource&gt;(STR_APPID, EQUAL, appId)&#10;                                .and(&#10;                                        &quot;type&quot;,&#10;                                        IN,&#10;                                        List.of(&#10;                                                ResourceType.MENU,&#10;                                                ResourceType.IFRAME,&#10;                                                ResourceType.APP))))&#10;                .thenReturn(resourceVOList);&#10;&#10;        assertEquals(&#10;                resourceService.currentMenuTreeV2_1(appAccountId, app, terminalDevice),&#10;                resourceVOList);&#10;    }" />
+              <option name="myGeneratedDate" value="1672883302496" />
+              <option name="myRequestId" value="4abfeb" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="ResourceServiceTest.java_currentMenuTreeV2_1WhenTerminalDeviceIsNullThenReturnMenuList">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="ResourceServiceTest.java" />
+              <option name="myMethodName" value="currentMenuTreeV2_1WhenTerminalDeviceIsNullThenReturnMenuList" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should return the menu list when the terminal device is null&quot;)&#10;    void currentMenuTreeV2_1WhenTerminalDeviceIsNullThenReturnMenuList() {&#10;        Long appAccountId = 1L;&#10;        String app = &quot;app&quot;;&#10;        String terminalDevice = null;&#10;        List&lt;ResourceVO&gt; resourceVOList = new ArrayList&lt;&gt;();&#10;        ResourceVO resourceVO = new ResourceVO();&#10;        resourceVO.setType(ResourceType.MENU);&#10;        resourceVOList.add(resourceVO);&#10;&#10;        when(resourceRepository.findAll(&#10;                        new RSQLSpecification&lt;Resource&gt;(STR_APPID, EQUAL, appAccountId)&#10;                                .and(&#10;                                        &quot;type&quot;,&#10;                                        IN,&#10;                                        List.of(&#10;                                                ResourceType.MENU,&#10;                                                ResourceType.IFRAME,&#10;                                                ResourceType.APP))))&#10;                .thenReturn(resourceVOList);&#10;&#10;        assertEquals(&#10;                resourceVOList,&#10;                resourceService.currentMenuTreeV2_1(appAccountId, app, terminalDevice));&#10;    }" />
+              <option name="myGeneratedDate" value="1672883302496" />
+              <option name="myRequestId" value="4abfeb" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="WarehouseConfigRepositoryTest.java_findByWarehouseIdWhenWarehouseIdIsFoundThenReturnTheWarehouseConfig">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="WarehouseConfigRepositoryTest.java" />
+              <option name="myMethodName" value="findByWarehouseIdWhenWarehouseIdIsFoundThenReturnTheWarehouseConfig" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should return the warehouseconfig when the warehouseid is found&quot;)&#10;    void findByWarehouseIdWhenWarehouseIdIsFoundThenReturnTheWarehouseConfig() {&#10;        String warehouseId = &quot;warehouseId&quot;;&#10;        WarehouseConfig warehouseConfig = new WarehouseConfig();&#10;        when(warehouseConfigRepository.findByWarehouseId(warehouseId)).thenReturn(warehouseConfig);&#10;&#10;        WarehouseConfig result = warehouseConfigRepository.findByWarehouseId(warehouseId);&#10;&#10;        assertEquals(warehouseConfig, result);&#10;    }" />
+              <option name="myGeneratedDate" value="1675129626611" />
+              <option name="myRequestId" value="aeff31" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+        <entry key="WarehouseConfigRepositoryTest.java_findByWarehouseIdWhenWarehouseIdIsNotFoundThenReturnNull">
+          <value>
+            <FeedbackDTO>
+              <option name="myFileName" value="WarehouseConfigRepositoryTest.java" />
+              <option name="myMethodName" value="findByWarehouseIdWhenWarehouseIdIsNotFoundThenReturnNull" />
+              <option name="myCode" value="@Test&#10;    @DisplayName(&quot;Should return null when the warehouseid is not found&quot;)&#10;    void findByWarehouseIdWhenWarehouseIdIsNotFoundThenReturnNull() {&#10;        String warehouseId = &quot;warehouseId&quot;;&#10;        when(warehouseConfigRepository.findByWarehouseId(warehouseId)).thenReturn(null);&#10;&#10;        WarehouseConfig warehouseConfig = warehouseConfigRepository.findByWarehouseId(warehouseId);&#10;&#10;        assertNull(warehouseConfig);&#10;    }" />
+              <option name="myGeneratedDate" value="1675129626611" />
+              <option name="myRequestId" value="aeff31" />
+            </FeedbackDTO>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>

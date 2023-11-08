@@ -1,0 +1,19 @@
+<keymap version="1" name="macOS copy" parent="Mac OS X 10.5+">
+  <action id="ActivateStructureToolWindow">
+    <keyboard-shortcut first-keystroke="alt s" />
+  </action>
+  <action id="CodeCleanup">
+    <keyboard-shortcut first-keystroke="alt o" />
+  </action>
+  <action id="JRebel Debug">
+    <keyboard-shortcut first-keystroke="alt r" />
+  </action>
+  <action id="UML.ShowChanges">
+    <keyboard-shortcut first-keystroke="alt d" />
+  </action>
+  <action id="UsageFiltering.Imports" />
+  <action id="Vcs.Show.Local.Changes">
+    <keyboard-shortcut first-keystroke="alt c" />
+  </action>
+  <action id="VcsHistory.ShowAllAffected" />
+</keymap>

@@ -1,0 +1,12 @@
+<application>
+  <component name="FileTypeManager" version="18">
+    <extensionMap>
+      <mapping pattern="chromedriver" type="Native" />
+      <mapping ext="production" type="PLAIN_TEXT" />
+      <mapping ext="0__box" type="PLAIN_TEXT" />
+      <mapping ext="db" type="SQL" />
+      <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
+      <removed_mapping ext="psd" approved="true" type="Image" />
+    </extensionMap>
+  </component>
+</application>
