@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="18">
     <extensionMap>
+      <mapping pattern="Google Chrome for Testing" type="AUTO_DETECTED" />
       <mapping pattern="chromedriver" type="Native" />
       <mapping ext="production" type="PLAIN_TEXT" />
       <mapping ext="0__box" type="PLAIN_TEXT" />
